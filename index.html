@@ -26,16 +26,39 @@
   </head>
   <body>
     <header>
-      <nav>
-        <h1 class="fs-3"><a href="/index.html">STINK INC.</a></h1>
-        <ul>
-          <li><a href="/listings.html">PRODUCTS</a></li>
-          <li><a href="/cart.html">CART</a></li>
-          <li><a href="/checkout.html">CHECKOUT</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><h1 class="fs-4 m-0">STINK INC.</h1>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="/index.html"
+                >HOME</a
+              >
+              <a class="nav-link" href="/listings.html">PRODUCTS</a>
+              <a class="nav-link" href="/cart.html">CART</a>
+              <a class="nav-link" href="/checkout.html">CHECKOUT</a>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
-    <div class="jumbotron card container-fluid">
+    <div class="jumbotron card container-fluid p-0">
       <img
         src="assets/images/skunk.jfif"
         class="card-img img-fluid"
@@ -50,10 +73,10 @@
         >
       </div>
     </div>
-    <div class="featured container-fluid">
+    <div class="featured container-fluid col-lg-8">
       <h3 class="row justify-content-center py-5 fs-1">FEATURED ITEMS</h3>
       <div class="row justify-content-around">
-        <div class="card col-auto" style="width: 30rem">
+        <div class="card col-auto px-0" style="width: 20rem">
           <img
             src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder.png"
             class="card-img-top"
@@ -68,7 +91,7 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-        <div class="card col-auto" style="width: 30rem">
+        <div class="card col-auto px-0" style="width: 20rem">
           <img
             src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder.png"
             class="card-img-top"
@@ -83,7 +106,7 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-        <div class="card col-auto" style="width: 30rem">
+        <div class="card col-auto px-0" style="width: 20rem">
           <img
             src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder.png"
             class="card-img-top"
@@ -100,7 +123,7 @@
         </div>
       </div>
     </div>
-    <div class="about container-fluid py-5">
+    <div class="about container-fluid col-lg-8 py-5">
       <h3 class="fs-1 row justify-content-center">WHO ARE WE</h3>
       <p class="row p-5">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
