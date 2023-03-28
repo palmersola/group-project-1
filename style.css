@@ -29,22 +29,7 @@ p,
 a {
   font-family: "Roboto", sans-serif;
 }
-
-nav ul {
-  display: flex;
-
-  list-style: none;
-}
-
-nav li {
-  padding-left: 15px;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--dark);
-}
-*/ .details img {
+.details img {
   width: 100%;
   height: 75%;
 }
