@@ -29,6 +29,15 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
+.card {
+    height: 200px;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+}
+
+
+
+
 header {
   padding: 1%;
 }
