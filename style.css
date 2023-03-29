@@ -1,8 +1,9 @@
 :root {
-  --dark: #071f27;
-  --blue: #5d6db3;
-  --cream: #e4e4e4;
+  --dark: #293a55;
+  --blue: #71b964;
+  --cream: #eaecf3;
   --violet: #79114a;
+  --gray: ;
 }
 
 html,
@@ -30,6 +31,15 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
+header {
+  background-color: var(--dark);
+}
+
+nav a,
+h1 {
+  color: white !important;
+}
+
 .details img {
   width: 100%;
   height: 75%;
@@ -48,6 +58,7 @@ a {
 .btn {
   background-color: var(--blue) !important;
   color: white !important;
+  border: none;
 }
 
 hr {
