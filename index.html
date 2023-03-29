@@ -1,180 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Roboto:ital,wght@0,300;0,500;1,100&display=swap"
-      rel="stylesheet"
-    />
-    <title>Homepage</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <img class="logo" width="55px" height="55px" src="assets/images/logo.png" alt="">
-          <a class="navbar-brand" href="#"
-            ><h1 class="fs-4 m-0">STINK INC.</h1>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >HOME</a
-              >
-              <a class="nav-link" href="listings.html">PRODUCTS</a>
-              <a class="nav-link" href="cart.html">CART</a>
-              <a class="nav-link" href="checkout.html">CHECKOUT</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <div class="jumbotron card container-fluid p-0">
-      <img
-        src="assets/images/skunk.jfif"
-        class="card-img img-fluid"
-        alt="..."
-      />
-      <div class="card-img-overlay">
-        <h1 class="display-4 fw-bold text-light">
-          Bootstrap simplifies your CSS
-        </h1>
-        <a class="btn btn-primary btn-lg" href="#" role="button"
-          >Bootstrap whoooo</a
-        >
-      </div>
-    </div>
-    <div class="featured container-fluid col-lg-8">
-      <h3 class="row justify-content-center py-5 fs-1">FEATURED ITEMS</h3>
-      <div class="row justify-content-around">
-        <div class="card col-auto px-0" style="width: 20rem">
-          <img
-            src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card col-auto px-0" style="width: 20rem">
-          <img
-            src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card col-auto px-0" style="width: 20rem">
-          <img
-            src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Roboto:ital,wght@0,300;0,500;1,100&display=swap"
+    rel="stylesheet" />
+  <title>Homepage</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <img class="logo" width="55px" height="55px" src="assets/images/logo.png" alt="" />
+        <a class="navbar-brand" href="#">
+          <h1 class="fs-4 m-0">STINK INC.</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+            <a class="nav-link" href="listings.html">PRODUCTS</a>
+            <a class="nav-link" href="cart.html">CART</a>
+            <a class="nav-link" href="checkout.html">CHECKOUT</a>
           </div>
         </div>
       </div>
+    </nav>
+  </header>
+  <div class="jumbotron card container-fluid p-0">
+    <img src="assets/images/skunk.jfif" class="card-img img-fluid" alt="..." />
+    <div class="card-img-overlay">
+      <h1 class="display-4 fw-bold text-light">
+        Bootstrap simplifies your CSS
+      </h1>
     </div>
-    <div class="about container-fluid col-lg-8 py-5">
-      <h3 class="fs-1 row justify-content-center">WHO ARE WE</h3>
-      <p class="row p-5">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-        recusandae ab voluptates dolor officia mollitia, blanditiis doloribus
-        officiis, aliquid a veritatis earum inventore saepe dicta
-        necessitatibus, et harum voluptatem ipsam molestiae ullam in. Maiores
-        vero nesciunt, voluptates numquam sapiente cupiditate dolor architecto
-        dolore maxime molestiae molestias explicabo natus modi omnis ipsam
-        fugiat ipsa! Fuga, earum quam fugiat ea labore repellat? Praesentium
-        sequi illum nesciunt eligendi, corrupti, quas officiis deleniti ab
-        reiciendis ducimus itaque. Consequatur asperiores fugiat magni magnam,
-        iure tempora eaque cum provident tempore dicta libero, excepturi in
-        minima facere minus praesentium repudiandae eos eveniet possimus error
-        reprehenderit vel. Iste laudantium molestiae enim ullam tenetur eum
-        optio id quod eligendi animi, non laborum eveniet reprehenderit impedit!
-        Hic, impedit vitae. Quia beatae quibusdam adipisci porro vitae tempore
-        incidunt dolorem excepturi asperiores obcaecati cupiditate illo nihil id
-        voluptatem, veniam praesentium pariatur delectus quaerat sit sint. Ipsum
-        ullam necessitatibus eaque dignissimos tempora quae fuga debitis odit,
-        esse dolores veniam labore, distinctio, culpa officia atque fugiat iure
-        rem blanditiis saepe totam! Non beatae dicta tempore voluptates?
-        Possimus, odio accusantium eum quas esse quod dolore exercitationem
-        quos. Labore debitis aliquid necessitatibus optio obcaecati rem.
-        Dolores, quidem assumenda fugiat ut numquam laborum ex doloremque. Ex
-        perferendis expedita recusandae nam nisi, qui error temporibus tenetur,
-        doloribus quis doloremque corporis excepturi quibusdam perspiciatis,
-        iusto rem. Amet ipsam nobis, facere animi earum quisquam. Delectus
-        dolores laudantium quam beatae dolore debitis odit consequuntur, eius
-        molestiae iste eos ad dignissimos nostrum, molestias dolor vero ut
-        voluptatem dicta animi blanditiis quisquam sed. Similique, cumque
-        provident ut ea aliquam molestias, corporis quos dolorem a officia
-        dolorum adipisci sapiente sint facere. Aliquam commodi nulla aspernatur
-        tenetur enim quaerat voluptas, minus voluptatem asperiores vitae cum
-        soluta id repellendus cumque nam unde rem earum tempora eius ab iure
-        amet, ipsam impedit quibusdam? Deleniti distinctio adipisci quibusdam at
-        esse dolorum excepturi non deserunt expedita voluptas eos vel atque
-        nobis dolor libero, consectetur quis? Excepturi et pariatur velit vitae,
-        sit, aspernatur molestias at ea culpa quia magni officia dolorem,
-        similique adipisci nobis cum labore atque. Qui laudantium sed eveniet
-        deleniti magnam voluptates quam totam fuga. Nesciunt aliquid, excepturi,
-        amet laboriosam iusto harum vel nemo ad, corporis tempore similique
-        voluptates eligendi sapiente corrupti assumenda blanditiis ipsa quam
-        modi quis asperiores odio eum quod ipsam! Sapiente voluptas similique
-        nemo minus vel minima ab fuga quae nobis! Nulla quibusdam repellendus,
-        mollitia dicta ad odit reprehenderit explicabo, asperiores earum
-        architecto id expedita?
-      </p>
+  </div>
+  <div class="featured container-fluid col-lg-8 my-5">
+    <h3 class="row justify-content-center py-5 fs-1">FEATURED ITEMS</h3>
+    <div class="row justify-content-around">
+      <div class="shadow card col-auto px-0 mb-3" style="width: 20rem">
+        <img
+          src="https://images.unsplash.com/photo-1606851682837-019baf2e8da4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFjb258ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+          class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Bacon</h5>
+          <p class="card-text">
+            Imagine waking up to the smell of a warm breakfast.<br />Stink
+            Level: 3 <br />Taste Rating: 10
+          </p>
+          <a href="details/bacon.html" class="btn btn-primary">Details</a>
+        </div>
+      </div>
+      <div class="shadow card col-auto px-0 mb-3" style="width: 20rem">
+        <img
+          src="https://images.unsplash.com/photo-1612251485013-58be9e5689c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YnVybmluZyUyMHJ1YmJlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+          class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Burning Rubber</h5>
+          <p class="card-text">
+            Ever want to create a candle with the scent burnt rubber? Well now
+            you can! <br />Stink Level: 8<br />Taste Rating: 6
+          </p>
+          <a href="details/burning_rubber.html" class="btn btn-primary">Details</a>
+        </div>
+      </div>
+      <div class="shadow card col-auto px-0 mb-3" style="width: 20rem">
+        <img
+          src="https://images.unsplash.com/photo-1562176552-b512ffac91fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2V0JTIwZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+          class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Wet Dog</h5>
+          <p class="card-text">
+            People will no longer be asking to pet your dog.<br />Stink Level:
+            9<br />Taste Rating: 2
+          </p>
+          <a href="details/wet_dog.html" class="btn btn-primary">Details</a>
+        </div>
+      </div>
     </div>
-    <footer class="my-5 pt-5 text-small mx-auto">
-      <p class="mb-1"><img class="logo" width="55px" height="55px" src="assets/images/logo.png" alt="">© 2023 STINK INC.</p>
-    </footer>
-  </body>
+  </div>
+  <div class="about container-fluid col-lg-8 py-5 my-5">
+    <h3 class="fs-1 row justify-content-center">WHO ARE WE</h3>
+    <p class="row fs-4 fw-light p-5">
+      Welcome to Stink Inc! A family-owned business that has been selling
+      stinky smells for over 20 years. Our mission is to provide our customers
+      with the highest quality smells at affordable prices. Everyone should
+      have access to great-smelling stinks, and we work hard to ensure our
+      customers are satisfied with every purchase.
+      <br />
+      <br />
+      We offer many stinky smells, including farts, ammonia, and gangrene. Our
+      products are made with only the finest ingredients, and we take great
+      care to ensure that they are safe for use by everyone.
+      <br />
+      <br />
+      At Stink Inc, we are committed to providing our customers with
+      exceptional service. If you have any questions or concerns about our
+      products or services, please don't hesitate to contact us. We are always
+      happy to help!
+    </p>
+  </div>
+  <footer class="text-small">
+    <p class="">
+      <img class="logo" width="55px" height="55px" src="assets/images/logo.png" alt="" />© 2023 STINK INC.
+    </p>
+  </footer>
+</body>
+
 </html>
