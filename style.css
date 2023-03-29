@@ -1,8 +1,8 @@
 :root {
   --dark: #071f27;
-  --blue: #a6b1e1;
-  --cream: #f9edcc;
-  --violet: #61304b;
+  --blue: #5d6db3;
+  --cream: #e4e4e4;
+  --violet: #79114a;
 }
 
 html,
@@ -45,9 +45,9 @@ a {
   margin: 0;
 }
 
-.add-to-cart {
+.btn {
   background-color: var(--blue) !important;
-  color: var(--cream) !important;
+  color: white !important;
 }
 
 hr {
