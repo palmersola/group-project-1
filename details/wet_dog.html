@@ -1,94 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Roboto:ital,wght@0,300;0,500;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/images/logosmall.png" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Roboto:ital,wght@0,300;0,500;1,100&display=swap"
-    rel="stylesheet" />
-  <title>Product Details</title>
-</head>
+    <title>Product Details</title>
+  </head>
 
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <img class="logo" width="55px" height="55px" src="/assets/images/logo.png" alt="" />
-        <a class="navbar-brand" href="#">
-          <h1 class="fs-4 m-0">STINK INC.</h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="/index.html">HOME</a>
-            <a class="nav-link active" href="/listings.html">PRODUCTS</a>
-            <a class="nav-link" href="/cart.html">CART</a>
-            <a class="nav-link" href="/checkout.html">CHECKOUT</a>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <img
+            class="logo"
+            width="55px"
+            height="55px"
+            src="/assets/images/logo.png"
+            alt=""
+          />
+          <a class="navbar-brand" href="#">
+            <h1 class="fs-4 m-0">STINK INC.</h1>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="/index.html"
+                >HOME</a
+              >
+              <a class="nav-link active" href="/listings.html">PRODUCTS</a>
+              <a class="nav-link" href="/cart.html">CART</a>
+              <a class="nav-link" href="/checkout.html">CHECKOUT</a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <div class="container details mt-5 mb-5">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-        <img class="img-fluid rounded-3"
-          src="https://images.unsplash.com/photo-1562176552-b512ffac91fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2V0JTIwZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
-          alt="" />
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-        <h1>Wet Dog</h1>
-        <p class="mt-3">$10.00</p>
-        <div class="quantity">
-          <label>Quantity</label>
-          <input type="text" name="quantity" value="1" />
+    <div class="container details mt-5 mb-5">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+          <img
+            class="img-fluid rounded-3"
+            src="https://images.unsplash.com/photo-1562176552-b512ffac91fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2V0JTIwZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+            alt=""
+          />
         </div>
-        <div class="mt-3">
-          <button type="button" class="btn add-to-cart">Add to Cart</button>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+          <h1>Wet Dog</h1>
+          <p class="mt-3">$10.00</p>
+          <div class="quantity">
+            <label> In Stock: all of them</label>
+            <label>Quantity</label>
+            <input type="text" name="quantity" value="1" />
+          </div>
+          <div class="mt-3">
+            <button type="button" class="btn add-to-cart">Add to Cart</button>
+          </div>
+          <hr />
+          <p>
+            The earthy aroma of wet fur and dog breath. It's like a bucket of
+            old socks and spoiled milk that's been left to soak in a swamp for a
+            week, with just a hint of wet doggy kisses thrown in for good
+            measure. It's the scent of a loyal companion, reminding you that
+            sometimes, even the best of friends can put up a bit of a stink.
+            It's like a challenge from the universe to see just how much puppy
+            love you can handle before your nose starts to twitch and your eyes
+            start to water. Or maybe it's just the smell of a pack of wolves
+            who've been frolicking in the rain, with a side of muddy paw prints
+            and chewed up bones. The smell of wet dog is a fragrant reminder
+            that sometimes, the things we love the most can also be the things
+            that make us smell like we've been rolling around in a dumpster full
+            of wet newspapers.
+          </p>
+          <br />
+          <h3>Disclaimer</h3>
+          <p>
+            The smell of wet dog may cause a sudden desire to adopt all the
+            dogs, a need to buy a large supply of towels, or the belief that you
+            are a dog whisperer. However, we cannot be held responsible for any
+            sudden accumulation of furry friends, excessive use of towels, or
+            barking conversations with dogs that may occur. Please use wet dogs
+            responsibly.
+          </p>
         </div>
-        <hr />
-        <p>
-          The earthy aroma of wet fur and dog breath. It's like a bucket of old socks and spoiled milk that's been left
-          to soak in a swamp for a week, with just a hint of wet doggy kisses thrown in for good measure.
-          It's the scent of a loyal companion, reminding you that sometimes, even the best of friends can put up a bit
-          of a stink. It's like a challenge from the universe to see just how much puppy love you can handle before your
-          nose starts to twitch and your eyes start to water.
-          Or maybe it's just the smell of a pack of wolves who've been frolicking in the rain, with a side of muddy paw
-          prints and chewed up bones.
-          The smell of wet dog is a fragrant reminder that sometimes, the things we love the most can also be the things
-          that make us smell like we've been rolling around in a dumpster full of wet newspapers.
-        </p>
-        <br />
-        <h3>Disclaimer</h3>
-        <p>
-          The smell of wet dog may cause a sudden desire to adopt all the dogs, a need to buy a large supply of towels,
-          or the belief that you are a dog whisperer. However, we cannot be held responsible for any sudden accumulation
-          of furry friends, excessive use of towels, or barking conversations with dogs that may occur. Please use wet
-          dogs responsibly.
-        </p>
       </div>
     </div>
-  </div>
 
-  <footer class="text-small fixed-bottom">
-    <p class="">
-      <img class="logo" width="55px" height="55px" src="/assets/images/logo.png" alt="" />© 2023 STINK INC.
-    </p>
-  </footer>
-</body>
-
+    <footer class="text-small fixed-bottom">
+      <p class="">
+        <img
+          class="logo"
+          width="55px"
+          height="55px"
+          src="/assets/images/logo.png"
+          alt=""
+        />© 2023 STINK INC.
+      </p>
+    </footer>
+  </body>
 </html>
