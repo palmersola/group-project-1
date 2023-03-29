@@ -2,7 +2,7 @@
   --dark: #293a55;
   --blue: #71b964;
   --cream: #eaecf3;
-  --darkgreen: #2f5529;
+  --darkgreen: #599150;
   --gray: ;
 }
 
@@ -63,6 +63,11 @@ nav h1 {
   background-color: var(--blue) !important;
   color: white !important;
   border: none;
+}
+
+.btn:hover {
+  background-color: var(--darkgreen) !important;
+  font-style: italic;
 }
 
 hr {
