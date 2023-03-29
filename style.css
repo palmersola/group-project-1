@@ -3,7 +3,7 @@
   --blue: #71b964;
   --cream: #eaecf3;
   --darkgreen: #599150;
-  --gray: ;
+  --opgreen: #599150b9;
 }
 
 html,
@@ -33,6 +33,7 @@ a {
 
 p {
   font-weight: 300;
+  color: var(--dark);
 }
 
 header {
@@ -42,6 +43,15 @@ header {
 nav a,
 nav h1 {
   color: white !important;
+}
+
+.jumbotron h1 {
+  background-color: var(--opgreen);
+  text-align: center;
+  font-size: 6vw;
+  padding: 1vw;
+  margin: auto;
+  font-style: italic;
 }
 
 .details img {
