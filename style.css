@@ -2,7 +2,7 @@
   --dark: #293a55;
   --blue: #71b964;
   --cream: #eaecf3;
-  --violet: #79114a;
+  --darkgreen: #2f5529;
   --gray: ;
 }
 
@@ -31,12 +31,16 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
+p {
+  font-weight: 300;
+}
+
 header {
   background-color: var(--dark);
 }
 
 nav a,
-h1 {
+nav h1 {
   color: white !important;
 }
 
@@ -66,8 +70,16 @@ hr {
 }
 
 footer {
-  display: block;
-  width: 200px;
+  /* display: block; */
+  width: 100%;
+  margin: 0px;
+  background-color: var(--dark);
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+  color: white;
 }
 
 .logo {
