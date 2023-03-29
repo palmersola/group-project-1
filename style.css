@@ -33,6 +33,7 @@ a {
 
 p {
   font-weight: 300;
+  color: var(--dark);
 }
 
 header {
@@ -50,6 +51,7 @@ nav h1 {
   font-size: 6vw;
   padding: 1vw;
   margin: auto;
+  font-style: italic;
 }
 
 .details img {
