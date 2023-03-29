@@ -1,233 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Roboto:ital,wght@0,300;0,500;1,100&display=swap"
-    rel="stylesheet" />
-  <title>Shopping Cart</title>
-</head>
-
-<body>
-  <!--NavBar Section-->
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <img class="logo" width="55px" height="55px" src="assets/images/logo.png" alt="">
-        <a class="navbar-brand" href="#">
-          <h1 class="fs-4 m-0">STINK INC.</h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <div class="navbar-nav">
-            <a class="nav-link " aria-current="page" href="index.html">HOME</a>
-            <a class="nav-link" href="listings.html">PRODUCTS</a>
-            <a class="nav-link active" href="cart.html">CART</a>
-            <a class="nav-link" href="checkout.html">CHECKOUT</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <script defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Roboto:ital,wght@0,300;0,500;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <!--NavBar Section-->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <img class="logo" width="55px" height="55px" src="assets/images/logo.png" alt="">
+          <a class="navbar-brand" href="#"
+            ><h1 class="fs-4 m-0">STINK INC.</h1>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link " aria-current="page" href="index.html">HOME</a>
+              <a class="nav-link" href="listings.html">PRODUCTS</a>
+              <a class="nav-link active" href="cart.html">CART</a>
+              <a class="nav-link" href="checkout.html">CHECKOUT</a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-  </header>
-  <!--Shopping cart and sort by-->
-  <section class="h-100">
-    <div class="container h-100 py-5">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col-10">
-          <div class="d-flex justify-content-between align-items-center mb-4">
-            <h3 class="fw-normal mb-0 text-black">Shopping Cart</h3>
-            <div>
-              <p class="mb-0">
-                <span class="text-muted">Sort by:</span>
-                <a href="#!" class="text-body">price <i class="fas fa-angle-down mt-1"></i></a>
-              </p>
-            </div>
+      </nav>
+    </header>
+    <!--Shopping cart and sort by-->
+    <section class="h-100 pb-5">
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+              <div class="py-5 text-center">
+                <form style="background-color: #293a55;" class="card p-3">
+                  <h2 style="color: white;">Shopping Cart</h2>
+                </form>
+              </div>
           </div>
-          <!--First Item In Cart-->
-          <div class="shadow card rounded-3 mb-4">
-            <div class="card-body p-4">
-              <div class="row d-flex justify-content-between align-items-center">
-                <div class="col-md-2 col-lg-2 col-xl-2">
-                  <img
-                    src="https://images.unsplash.com/photo-1594188007534-68deaebc095c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZGlydHklMjBmZWV0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
-                    class="img-fluid rounded-3" alt="Dirty Feet" />
-                </div>
-                <div class="col-md-3 col-lg-3 col-xl-3">
-                  <p class="lead fw-normal mb-2">Dirty Feet</p>
-                  <p>
-                    <span class="text-muted">Stink Level: </span>5<br>
-                    <span class="text-muted">Taste Rating: </span>2
-                  </p>
-                </div>
-                <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
 
-                  <input id="form1" min="0" name="quantity" value="1" type="number"
-                    class="form-control form-control-sm mb-2" />
+            <p>
+              <span class="text-muted">Sort by:</span>
+              <a href="#!" class="text-body"
+                  >price <i class="fas fa-angle-down mt-1"></i
+              ></a>
+            </p>
 
-                </div>
-                <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1 text-end">
-                  <h5 class="mb-0">$499</h5>
-                </div>
-                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                  <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+<!--First Item In Cart-->
+            <div class="shadow card rounded-3 mb-4 mt-5">
+              <div class="card-body p-4">
+                <div
+                  class="row d-flex justify-content-between align-items-center"
+                >
+                  <div class="col-md-2 col-lg-2 col-xl-2">
+                    <img
+                      src="https://images.unsplash.com/photo-1594188007534-68deaebc095c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZGlydHklMjBmZWV0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                      class="img-fluid rounded-3"
+                      alt="Dirty Feet"
+                    />
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-3">
+                    <p class="lead fw-normal mb-2">Dirty Feet</p>
+                    <p>
+                      <span class="text-muted">Stink Level: </span>5<br>
+                      <span class="text-muted">Taste Rating: </span>2
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+
+                    <input
+                      id="form1"
+                      min="0"
+                      name="quantity"
+                      value="1"
+                      type="number"
+                      class="form-control form-control-sm mb-2"
+                    />
+
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1 text-end">
+                    <h5 class="mb-0">$10</h5>
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="#!" class="text-danger"
+                      ><i class="fas fa-trash fa-lg"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!--Second Item In Cart-->
-          <div class="shadow card rounded-3 mb-4">
-            <div class="card-body p-4">
-              <div class="row d-flex justify-content-between align-items-center">
-                <div class="col-md-2 col-lg-2 col-xl-2">
-                  <img
-                    src="https://images.unsplash.com/photo-1612251485013-58be9e5689c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YnVybmluZyUyMHJ1YmJlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
-                    class="img-fluid rounded-3" alt="Burning Rubber" />
-                </div>
-                <div class="col-md-3 col-lg-3 col-xl-3">
-                  <p class="lead fw-normal mb-2">Burning Rubber</p>
-                  <p>
-                    <span class="text-muted">Stink Level: </span>8<br>
-                    <span class="text-muted">Taste Rating:</span>6
-                  </p>
-                </div>
-                <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+<!--Second Item In Cart-->
+            <div class="shadow card rounded-3 mb-4">
+              <div class="card-body p-4">
+                <div
+                  class="row d-flex justify-content-between align-items-center"
+                >
+                  <div class="col-md-2 col-lg-2 col-xl-2">
+                    <img
+                      src="https://images.unsplash.com/photo-1612251485013-58be9e5689c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YnVybmluZyUyMHJ1YmJlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+                      class="img-fluid rounded-3"
+                      alt="Burning Rubber"
+                    />
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-3">
+                    <p class="lead fw-normal mb-2">Burning Rubber</p>
+                    <p>
+                      <span class="text-muted">Stink Level: </span>8<br>
+                      <span class="text-muted">Taste Rating:</span>6
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
 
-                  <input id="form1" min="0" name="quantity" value="1" type="number"
-                    class="form-control form-control-sm mb-2" />
+                    <input
+                      id="form1"
+                      min="0"
+                      name="quantity"
+                      value="1"
+                      type="number"
+                      class="form-control form-control-sm mb-2"
+                    />
 
-                </div>
-                <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1 text-end">
-                  <h5 class="mb-0">$499</h5>
-                </div>
-                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                  <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1 text-end">
+                    <h5 class="mb-0">$10</h5>
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="#!" class="text-danger"
+                      ><i class="fas fa-trash fa-lg"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!--Third Item In Cart-->
-          <div class="shadow card rounded-3 mb-4">
-            <div class="card-body p-4">
-              <div class="row d-flex justify-content-between align-items-center">
-                <div class="col-md-2 col-lg-2 col-xl-2">
-                  <img
-                    src="https://images.unsplash.com/photo-1528671839653-1f8ab2e4bda1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2lnYXJldHRlJTIwYnV0dHN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
-                    class="img-fluid rounded-3" alt="cigarette butts" />
-                </div>
-                <div class="col-md-3 col-lg-3 col-xl-3">
-                  <p class="lead fw-normal mb-2">Cigarette Butts</p>
-                  <p>
-                    <span class="text-muted">Stink Level: </span>3<br>
-                    <span class="text-muted">Taste Rating: </span>10
-                  </p>
-                </div>
-                <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+<!--Third Item In Cart-->
+            <div class="shadow card rounded-3 mb-4">
+              <div class="card-body p-4">
+                <div
+                  class="row d-flex justify-content-between align-items-center"
+                >
+                  <div class="col-md-2 col-lg-2 col-xl-2">
+                    <img
+                      src="https://images.unsplash.com/photo-1528671839653-1f8ab2e4bda1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2lnYXJldHRlJTIwYnV0dHN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+                      class="img-fluid rounded-3"
+                      alt="cigarette butts"
+                    />
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-3">
+                    <p class="lead fw-normal mb-2">Cigarette Butts</p>
+                    <p>
+                      <span class="text-muted">Stink Level: </span>3<br>
+                      <span class="text-muted">Taste Rating: </span>10
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
 
-                  <input id="form1" min="0" name="quantity" value="1" type="number"
-                    class="form-control form-control-sm mb-2" />
+                    <input
+                      id="form1"
+                      min="0"
+                      name="quantity"
+                      value="1"
+                      type="number"
+                      class="form-control form-control-sm mb-2"
+                    />
 
-                </div>
-                <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1 text-end">
-                  <h5 class="mb-0">$499</h5>
-                </div>
-                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                  <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1 text-end">
+                    <h5 class="mb-0">$10</h5>
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="#!" class="text-danger"
+                      ><i class="fas fa-trash fa-lg"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!--Fourth Item In Cart-->
-          <div class="shadow card rounded-3 mb-4">
-            <div class="card-body p-4">
-              <div class="row d-flex justify-content-between align-items-center">
-                <div class="col-md-2 col-lg-2 col-xl-2">
-                  <img
-                    src="https://images.unsplash.com/photo-1562176552-b512ffac91fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2V0JTIwZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
-                    class="img-fluid rounded-3" alt="Wet Dog" />
-                </div>
-                <div class="col-md-3 col-lg-3 col-xl-3">
-                  <p class="lead fw-normal mb-2">Wet Dog</p>
-                  <p>
-                    <span class="text-muted">Stink Level: </span>9<br>
-                    <span class="text-muted">Taste Rating: </span>1
-                  </p>
-                </div>
-                <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+<!--Fourth Item In Cart-->
+            <div class="shadow card rounded-3 mb-4">
+              <div class="card-body p-4">
+                <div
+                  class="row d-flex justify-content-between align-items-center"
+                >
+                  <div class="col-md-2 col-lg-2 col-xl-2">
+                    <img
+                      src="https://images.unsplash.com/photo-1562176552-b512ffac91fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2V0JTIwZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                      class="img-fluid rounded-3"
+                      alt="Wet Dog"
+                    />
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-3">
+                    <p class="lead fw-normal mb-2">Wet Dog</p>
+                    <p>
+                      <span class="text-muted">Stink Level: </span>9<br>
+                      <span class="text-muted">Taste Rating: </span>1
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
 
-                  <input id="form1" min="0" name="quantity" value="1" type="number"
-                    class="form-control form-control-sm mb-2" />
+                    <input
+                      id="form1"
+                      min="0"
+                      name="quantity"
+                      value="1"
+                      type="number"
+                      class="form-control form-control-sm mb-2"
+                    />
 
-                </div>
-                <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1 text-end">
-                  <h5>$499</h5>
-                </div>
-                <div class="col-md-1 col-lg-1 col-xl-1">
-                  <a href="#!" class="text-danger"><i class=""></i></a>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1 text-end">
+                    <h5>$10</h5>
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1">
+                    <a href="#!" class="text-danger"
+                      ><i class=""></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!--Discount Code-->
-          <div class="shadow card mb-4">
-            <div class="card-body p-4 d-flex flex-row">
-              <div class="form-outline flex-fill">
-                <input type="text" id="form1" class="form-control form-control-lg" />
-                <label class="form-label" for="form1">Discount code</label>
-              </div>
-              <button type="button" class="btn btn-light btn-lg ms-3 align-content-end" style="max-height: 5rem;">
-                Apply
-              </button>
-            </div>
-          </div>
-          <!--Order Total-->
-          <div class="shadow card mb-4">
-            <div class="card-body p-4 d-flex flex-row">
-              <div class="form-outline flex-fill">
-                <div class="float-end">
-                  <p class="mb-0 me-5 d-flex align-items-center">
-                    <span class="small text-muted me-2">Order total:</span> <span class="lead fw-normal">$799</span>
-                  </p>
+<!--Discount Code-->
+            <div class="shadow card mb-4">
+              <div class="card-body p-4 d-flex flex-row">
+                <div class="form-outline flex-fill">
+                  <input
+                    type="text"
+                    id="form1"
+                    class="form-control form-control-lg"
+                  />
+                  <label class="form-label" for="form1">Discount code</label>
                 </div>
-                <label class="form-label" for="form1"></label>
+                <button
+                  type="button"
+                  class="btn btn-light btn-lg ms-3 align-content-end"
+                  style="max-height: 5rem;"
+                >
+                  Apply
+                </button>
               </div>
             </div>
-          </div>
-          <!--Checkout-->
-          <div class="shadow card">
-            <div class="card-body d-flex flex-row">
-              <div class="form-outline flex-fill">
-                <label class="form-label" for="form1"></label>
+<!--Order Total-->
+            <div class="shadow card mb-4">
+              <div class="card-body p-4 d-flex flex-row">
+                <div class="form-outline flex-fill">
+                  <div class="float-end">
+                    <p class="mb-0 me-5 d-flex align-items-center">
+                      <span class="small text-muted me-2">Order total:</span> <span
+                        class="lead fw-normal">$40</span>
+                    </p>
+                  </div>
+                  <label class="form-label" for="form1"></label>
+                </div>
               </div>
-              <a href="listings.html">
+            </div>
+<!--Checkout-->
+            <div class="shadow card">
+              <div class="card-body d-flex flex-row">
+                <div class="form-outline flex-fill">
+                  <label class="form-label" for="form1"></label>
+                </div>
+                <a href="listings.html">
                 <button type="button" class="btn btn-light btn-lg me-2">Continue shopping</button></a>
-              <a href="checkout.html">
-                <button type="button" class="btn btn-light btn-lg" style="max-height: 5rem;">
-                  Proceed to Checkout
+                <a href="checkout.html">
+                <button
+                  type="button"
+                  class="btn btn-light btn-lg"
+                  style="max-height: 5rem;">
+                Proceed to Checkout
                 </button></a>
+              </div>
+            </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    </div>
-  </section>
-  <footer class="text-small fixed-bottom">
-    <p class=""><img class="logo" width="55px" height="55px" src="assets/images/logo.png" alt="">© 2023 STINK INC.</p>
-  </footer>
-</body>
+    </section>
 
+    <footer class="text-small"> <!--Footer Section-->
+      <p class=""><img class="logo" width="55px" height="55px" src="assets/images/logo.png" alt="">© 2023 STINK INC.</p>
+    </footer>
+  </body>
 </html>
