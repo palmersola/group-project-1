@@ -53,3 +53,12 @@ a {
 hr {
   opacity: 1.25;
 }
+
+footer {
+  display: block;
+  width: 200px;
+}
+
+.logo {
+  padding-bottom: 5px;
+}
