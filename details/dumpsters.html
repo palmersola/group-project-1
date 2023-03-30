@@ -1,92 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Roboto:ital,wght@0,300;0,500;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/images/logosmall.png"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Roboto:ital,wght@0,300;0,500;1,100&display=swap"
-    rel="stylesheet" />
-  <title>Product Details</title>
-</head>
+    <title>Product Details</title>
+  </head>
 
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <img class="logo" width="55px" height="55px" src="/assets/images/logo.png" alt="" />
-        <a class="navbar-brand" href="#">
-          <h1 class="fs-4 m-0">STINK INC.</h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="/index.html">HOME</a>
-            <a class="nav-link active" href="/listings.html">PRODUCTS</a>
-            <a class="nav-link" href="/cart.html">CART</a>
-            <a class="nav-link" href="/checkout.html">CHECKOUT</a>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <img
+            class="logo"
+            width="55px"
+            height="55px"
+            src="../assets/images/logo.png"
+            alt=""
+          />
+          <a class="navbar-brand" href="#">
+            <h1 class="fs-4 m-0">STINK INC.</h1>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >HOME</a
+              >
+              <a class="nav-link active" href="../listings.html">PRODUCTS</a>
+              <a class="nav-link" href="../cart.html">CART</a>
+              <a class="nav-link" href="../checkout.html">CHECKOUT</a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <div class="container details mt-5 mb-5">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-        <img class="img-fluid rounded-3"
-          src="https://images.unsplash.com/photo-1510251197878-a2e6d2cb590c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGR1bXBzdGVyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
-          alt="dumpster" />
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-        <h1>Dumpster</h1>
-        <p class="mt-3">$10.00</p>
-        <div class="quantity">
-          <label>Quantity</label>
-          <input type="text" name="quantity" value="1" />
+    <div class="container details mt-5 mb-5">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+          <img
+            class="img-fluid rounded-3"
+            src="https://images.unsplash.com/photo-1510251197878-a2e6d2cb590c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGR1bXBzdGVyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+            alt="dumpster"
+          />
         </div>
-        <div class="mt-3">
-          <button type="button" class="btn add-to-cart">Add to Cart</button>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+          <h1>Dumpster</h1>
+          <p class="mt-3">$10.00</p>
+          <div class="quantity">
+            <label> In Stock: 9</label>
+            <label>Quantity</label>
+            <input type="text" name="quantity" value="1" />
+          </div>
+          <div class="mt-3">
+            <a href="../cart.html">
+              <button type="button" class="btn add-to-cart";>Add to Cart</button>
+          </a>
+          </div>
+          <hr />
+          <p>
+            A delightful bouquet of garbage, regret, and lost hope. It's like a
+            symphony of stale bread, spoiled milk, and discarded dreams, all
+            mingling together to create a scent that could knock a buzzard off a
+            manure wagon. It's the aroma of a city's back alleys, reminding you
+            that even in the most civilized of places, there's still a lot of
+            filth to contend with. It's like a challenge from the universe to
+            see just how much unpleasantness you can tolerate before your nose
+            rebels and runs away screaming. Or maybe it's just the smell of a
+            particularly rancid burrito that's been left to fester in the sun
+            for a week. A fragrant reminder that sometimes, life can be a real
+            trash heap, but if you can hold your nose and keep moving forward,
+            you just might find some treasures hidden amongst the garbage.
+          </p>
+          <br />
+          <h3>Disclaimer</h3>
+          <p>
+            The smell of dumpsters can be strong and unpleasant to many
+            individuals. We do not promote or condone any unsanitary or
+            hazardous practices related to dumpster use. Any references made to
+            the smell of dumpsters are not to be interpreted as an endorsement
+            or encouragement of poor waste management.
+          </p>
         </div>
-        <hr />
-        <p>
-          A delightful bouquet of garbage, regret, and lost hope. It's like a symphony of stale bread, spoiled milk, and
-          discarded dreams, all mingling together to create a scent that could knock a buzzard off a manure wagon. It's
-          the aroma of a city's back alleys, reminding you that even in the most civilized of places, there's still a
-          lot of filth to contend with. It's like a challenge from the universe to see just how much unpleasantness you
-          can tolerate before your nose rebels and runs away screaming. Or maybe it's just the smell of a particularly
-          rancid burrito that's been left to fester in the sun for a week. A fragrant reminder that sometimes, life can
-          be a real trash heap, but if you can hold your nose and keep moving forward, you just might find some
-          treasures hidden amongst the garbage.
-        </p>
-        <br />
-        <h3>Disclaimer</h3>
-        <p>
-          The smell of dumpsters can be strong and unpleasant to many individuals. We do not promote or condone any
-          unsanitary or hazardous practices related to dumpster use. Any references made to the smell of dumpsters are
-          not to be interpreted as an endorsement or encouragement of poor waste management.
-        </p>
       </div>
     </div>
-  </div>
 
-  <footer class="text-small fixed-bottom">
-    <p class="">
-      <img class="logo" width="55px" height="55px" src="/assets/images/logo.png" alt="" />© 2023 STINK INC.
-    </p>
-  </footer>
-</body>
-
+    <footer class="text-small fixed-bottom">
+      <p class="">
+        <img
+          class="logo"
+          width="55px"
+          height="55px"
+          src="../assets/images/logo.png"
+          alt=""
+        />© 2023 STINK INC.
+      </p>
+    </footer>
+  </body>
 </html>
